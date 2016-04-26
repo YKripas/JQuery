@@ -6,5 +6,15 @@ $(document).ready(function(){
     $("input, textarea").focus(function(){
         $(this).select();
     });
+    
+    //MAKING THE GALLERY CAPTIONS APPEAR ON HOVER
+    $("figcaption").hide();
+    $("figure").each(function(){
+        $(this).hover(function(){
+            $(this).find("figcaption").slideDown('medium');
+        }, function(){
+            $(this).find("figcaption").slideUp('medium');
+        });
+    });
         
 });
