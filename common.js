@@ -11,9 +11,9 @@ $(document).ready(function(){
     $("figcaption").hide();
     $("figure").each(function(){
         $(this).hover(function(){
-            $(this).find("figcaption").slideDown('medium');
+            $(this).find("figcaption").slideDown('slow');
         }, function(){
-            $(this).find("figcaption").slideUp('medium');
+            $(this).find("figcaption").slideUp('slow');
         });
     });
         
